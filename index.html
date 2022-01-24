@@ -7,26 +7,32 @@
     <title>Movie List</title>
 </head>
 <body>
+    
     <header>
-        <form id="form">
+        <form  id="form">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
     </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
 
-    <main id="main">
-        <div class="movie">
-            <img src="https://i.pinimg.com/originals/0c/8d/c5/0c8dc5b6b205c2f32a7da7f5bb209beb.jpg" alt="Image">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
 
-            <div class="movie-info">
-                <h3>Movie Title</h3>
-                <span class="green">9.8</span>
-            </div>
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
 
-            <div class="overview">
-            </div>
+    </div>
 
-        </div>
-    </main>
     <script src="script.js"></script>
 </body>
 </html>
